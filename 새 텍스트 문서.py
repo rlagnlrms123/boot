@@ -1,7 +1,5 @@
-from typing import Any, Union
-
 import discord
-n = 0
+import os
 
 client = discord.Client()
 @client.event
@@ -86,5 +84,5 @@ async def on_message(message):
 
 
 
-
-client.run('Njk0NTA4MDI4NzcwMzg1OTkw.XoMpMQ.DIMzLPh2aqSKw4xcKo93eqS1HiI')
+access_token = os.environ["BOT_TOKEN"]
+client.run('access_token')
